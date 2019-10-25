@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Agent of SHIELD
+		</title>
+	<head>
+	<body>
+		<figure>
+			<img
+				src="https://seeklogo.com/images/S/s-h-i-e-l-d-logo-F89847BD30-seeklogo.com.png"
+				alt="Shield Logo"
+				title="Agent of Shield"
+				height="150"
+				width="150"
+			/>
+			<figcaption>Strategic Homeland Intervention, Enforcement and Logistics Division</figcaption>
+		</figure>
+		<h1>
+      SHIELD Registration Form
+    </h1>
+    <form id="registrationForm" action="index.html" method="post">
+			<input type="hidden" name="ipAddress" value="192.168.0.0.1" />
+
+      <fieldset>
+				<legend>About you</legend>
+				<div>
+					<label for="firstName">First Name: </label>
+	        <input type="text" name="firstName" value="" placeholder="John">
+	        <label for="lastName">Last Name: </label>
+	        <input type="text" name="lastName" value="" placeholder="Doe">
+				</div>
+				<div>
+	        <label for="gender">Gender: </label>
+	        <input type="radio" name="gender" value="male" checked> Male </input>
+	        <input type="radio" name="gender" value="female"> Female </input>
+	      </div>
+				<div>
+					<label for="email">Email Address:</label>
+					<input type="email" name="email" />
+				</div>
+				<div>
+					<label for="phone">Phone Number:</label>
+					<input type="tel" name="phone" required />
+				</div>
+      </fieldset>
+			<br>
+			<fieldset>
+				<legend>Questionaire</legend>
+
+				<label for="startDate">When can you start?</label>
+				<input type="date" name="startDate" />
+
+				<p>Please select the positions that you are interested in: </p>
+				<input type="checkbox" name="positions" value="superHero" /> Super Hero<br>
+				<input type="checkbox" name="positions" value="fieldAgent" /> Field Agent<br>
+				<input type="checkbox" name="positions" value="operator" /> Operator<br>
+
+				<p>Which state are you currently live in?</p>
+				<select type="checkbox" name="location">
+					<option value="california">California</option>
+					<option value="newYork">New York</option>
+					<option value="washington">Washington</option>
+				</select>
+
+				<p>Which of the followings can be used to describe you? (Please select all that apply)</p>
+				<select name="personality" size="5" multiple>
+					<option value="leader">Leadership</option>
+					<option value="ambitious">Ambitious</option>
+					<option value="aggressive">Aggressive</option>
+					<option value="teamPlayer">Team Player</option>
+				</select>
+				<br>
+
+				<p>Why do you want to join SHIELD?</p>
+				<textarea name="purpose" rows="8" cols="80" placeholder="Enter your reasons..."></textarea>
+
+				<p>Please upload your resume.</p>
+				<input type="file" accept=".pdf, .doc, .docx" name="resume" />
+			</fieldset>
+
+			<input type="submit" name="submit" value="Submit" />
+    </form>
+	</body>
+</html>
